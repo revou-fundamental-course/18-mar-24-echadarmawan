@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OURS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header class="header-container">
+        <section class="logo-icon"></section>
+        <section class="nav-container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#package">Our Package</a></li>
+                <li><a href="#call">Call Us</a></li>
+            </ul>
+        </section>
+    </header>
+    <hr/>
+
+    <!-- CONTENT HOME -->
+    <section class ="section-container">
+        <header>
+            <h1>Your Trusted Friend</h1>
+            <h4>Need someone to talk? Share your thought. Your feelings are OURS too!</h4>
+        </header>
+        <div class="container">
+            <div class="box-home" id="home">
+                <img class="img-slideshow" src="assets/banner-1.png" target="_blank" alt="">
+                <img class="img-slideshow" src="assets/banner-2.png" target="_blank" alt="">
+                <img class="img-slideshow" src="assets/banner-3.png" target="_blank" alt="">
+                <div class="button-banner">
+                    <button onclick="plusDivs(-1)">Previous</button>
+                    <button onclick="plusDivs(1)">Next</button>
+                </div>
+                <blockquote>"<span id="sender-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga odio est libero, voluptatum autem doloribus ullam aspernatur neque nostrum, voluptatibus voluptates repellat esse impedit! Quod explicabo delectus sed dolores quae.</span>"</blockquote>
+                <div class="profile-content">
+                    <div class="profile-image-container">
+                        <img src="assets/profile.jpeg" alt="">
+                    </div>
+                    <div>
+                        <div class="profile-details">
+                            <span class="profile-name" id="sender-name">-</span>
+                            <span class="profile-feel">Hey, I'm really <span id="sender-feels">-</span>.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-container">
+                    <fieldset>
+                        <legend>Things about me:</legend>
+                        <ol>
+                            <li>Age: <span id="sender-age"></span></li>
+                            <li>Gender: <span id="sender-gender"></span></li>
+                            <li>Phone: <span id="sender-phone"></span></li>
+                            <li>Email: <span id="sender-email"></span></li>
+                        </ol>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="box-contact">
+                <form class="form-contact" name="message-form" onsubmit="return validateForm()">
+                    <h3>Make Your Message</h3>
+                    <p>Jika ingin membuat pesan, isi form di bawah ini dengan lengkap.</p>
+                    <label for="name">Your Name:</label>
+                    <input type="text" placeholder="first and last name" name="name-input" class="input-control" required>
+                    
+                    <label for="gender">Gender:</label>
+                    <select name="gender-input" class="input-control" required>
+                        <option value="">Select option</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                        <option value="Tak Ingin Disebutkan">Tak Ingin Disebutkan</option>
+                    </select>
+
+                    <label for="umur">Your Age:</label>
+                    <input type="number" min="1" placeholder="Type a number only" name="age-input" class="input-control" required>
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" placeholder="example@email.com" name="email-input" class="input-control" required>
+                    
+                    <label for="phone">Phone number:</label>
+                    <input type="text" placeholder="ex. +62 888-8888-8888" name="phone-input" class="input-control" required>
+                    
+                    <label for="feels">How are you feeling right now??</label>
+                    <select name="feels-input" class="input-control" required>
+                        <option value="">Select option</option>
+                        <option value="great">Great!</option>
+                        <option value="okay">Things are pretty good, I guess.</option>
+                        <option value="worried">I've got some problems here...</option>
+                        <option value="upset">I'm really upset.</option>
+                        <option value="angry">I'm very angry!!!</option>
+                    </select>
+                    
+                    <label for="message">Your Message:</label>
+                    <textarea name="message-input" class="input-control" rows="10" placeholder="Write only a sentence"></textarea>
+                    <input type="submit" name="kirim" value="Send" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT OUR PACKAGE DAN CALL ACTION -->
+    <section class ="section-container">
+        <header id="package">
+            <h1>Our Package</h1>
+        </header>
+        <div class="container">
+            <div class="box-package">
+                <img src="assets/img-1.png" alt="">
+                <h3>Cement Doll</h3>
+                <p>Cement pillows made from full Velboa, soft and hairless, safe for children. It contains dacron which is softer and doesn't deflate easily. Size 35*56 cm. Pillow type: Tiga Roda, Gresik, Holcim, Bima, Mortar 51, Ramaindo, Ramaindo Biru, Dynamic.</p>
+            </div>
+            <div class="box-package">
+                <img src="assets/img-2.png" alt="">
+                <h3>Squid Game Guard Doll</h3>
+                <p>Plush doll from the Korean drama Squid Game, 33 cm, with a hoodie that can be opened. The material is filled with high quality dacron elastic cotton which is softer.</p>
+            </div>
+            <div class="box-package">
+                <img src="assets/img-3.png" alt="">
+                <h3>Octopus Doll</h3>
+                <p>Octopus doll with two colors (in/out) and two expressions (happy/angry) measuring 23 x 15 cm yelvo filled with dacron.</p>
+            </div>
+            <div class="box-package">
+                <img src="assets/img-4.png" alt="">
+                <h3>Cat Doll</h3>
+                <p>Simulation Table Display Cat Plush Doll with Meow Sounds. Doll Type: Yellow Stripes, White with Yellow Striped Head, Solid White, White with Black Striped Head.</p>
+            </div>
+            <div class="box-package">
+                <img src="assets/img-5.png" alt="">
+                <h3>Dog Doll</h3>
+                <p>A stuffed dog toy that can move, like a real pet dog. The dog's fur is soft & thick, doesn't fall out easily. There are 4 dog models: Chocolate Puddle, White Chocolate Puddle, Cream, Husky.</p>
+            </div>
+            <div class="box-package">
+                <img src="assets/img-6.png" alt="">
+                <h3>Panda Doll</h3>
+                <p>Cute 30/60/80 CM panda doll. It's fluffy and soft.</p>
+            </div>
+            <div class="box-call" id="call">
+                <h1>Need Someone (Doll?) to Talk?</h1>
+                <p>An online message generator and provides dolls that can be sold. If interested in our dolls, you can contact us below.</p>
+                <button class="btn-button"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">SUPPORT US</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <small>Copyright &copy; 2024 - OURS</small>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
